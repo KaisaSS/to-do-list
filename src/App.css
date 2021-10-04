@@ -63,8 +63,8 @@ h1 {
 }
 
 .to-do-input.edit {
-  background: linear-gradient(90deg, rgba(20, 159, 255, 1) 0%, rgba(17, 122, 255, 1) 100%);
-  padding: 16px 22px;
+  background: rgba(152, 205, 255, 0.164);
+  padding: 15px 22px;
 }
 
 .to-do-container {
