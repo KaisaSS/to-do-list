@@ -1,7 +1,13 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 
 function ToDoForm(props) {
   const [input, setInput] = useState("");
+
+  const inputRef = useRef(null);
+
+  useEffect(() => {
+    inputRef.current.focus();
+  });
 
   const handleChange = (e) => {
     setInput(e.target.value);
@@ -27,6 +33,7 @@ function ToDoForm(props) {
         name="text"
         className="to-do-input"
         onChange={handleChange}
+        ref={inputRef}
       />
       <button className="to-do-button">Add New Item</button>
     </form>
